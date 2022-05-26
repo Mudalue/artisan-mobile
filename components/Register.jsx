@@ -14,7 +14,15 @@ export const Register = ({ navigation }) => {
       <KeyboardAvoidingView behavior={Platform.OS === "ios" ? "position" : ""}>
         <View>
           <Text style={styles.headerText}>Create Account</Text>
-          <Text style={{color: '#fff', fontFamily: 'Inter_900Black', textAlign: 'center'}}>Welcome to Artisans</Text>
+          <Text
+            style={{
+              color: "#fff",
+              fontFamily: "Inter_900Black",
+              textAlign: "center",
+            }}
+          >
+            Welcome to Artisans
+          </Text>
         </View>
         <View style={styles.firstContainer}>
           <View style={styles.imageContainer}>
@@ -30,21 +38,19 @@ export const Register = ({ navigation }) => {
               }}
             />
             <TouchableOpacity
-              style={{
-                borderRadius: "50%",
-                height: 45,
+            >
+              <View style={{ borderRadius: 100 / 2, height: 45,
                 width: 45,
                 position: "absolute",
                 top: 60,
                 left: 70,
-                backgroundColor: "#fff",
-              }}
-            >
-              <Icon
-                name={"plus"}
-                size={20}
-                style={{ textAlign: "center", padding: 12 }}
-              />
+                backgroundColor: "#fff" }}>
+                <Icon
+                  name={"plus"}
+                  size={20}
+                  style={{ textAlign: "center", padding: 12 }}
+                />
+              </View>
             </TouchableOpacity>
           </View>
         </View>
@@ -86,7 +92,7 @@ export const Register = ({ navigation }) => {
                     color: "#ffb07c",
                     fontSize: 16,
                     fontWeight: "600",
-                    fontFamily: 'Inter_900Black'
+                    fontFamily: "Inter_900Black",
                   }}
                 >
                   Continue
@@ -109,7 +115,11 @@ export const Register = ({ navigation }) => {
             <TouchableOpacity
               style={{ backgroundColor: "#fff", width: "60%", padding: 8 }}
             >
-              <Text style={{ textAlign: "center", fontFamily: 'Inter_900Black' }}>Sign up with google</Text>
+              <Text
+                style={{ textAlign: "center", fontFamily: "Inter_900Black" }}
+              >
+                Sign up with google
+              </Text>
             </TouchableOpacity>
           </View>
           {/* <View style={{ marginTop: 20 }}>
@@ -136,20 +146,24 @@ const styles = StyleSheet.create({
     height: "100%",
     width: "100%",
     backgroundColor: "#232B2B",
+    justifyContent: 'center',
+    alignContent: 'center',
     padding: 10,
+
   },
   headerText: {
     fontSize: 30,
-    padding: 10,
+    paddingTop: 50,
     fontWeight: "700",
     color: "#ffb07c",
     textAlign: "center",
-    fontFamily: 'Inter_900Black'
+    fontFamily: "Inter_900Black",
   },
   firstContainer: {
-    height: "40%",
+    // height: "40%",
     justifyContent: "center",
     alignItems: "center",
+    paddingVertical: 40
   },
   imageContainer: {
     borderRadius: 100 / 2,

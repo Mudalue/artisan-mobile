@@ -33,7 +33,7 @@ const Profile = () => {
       >
         <Image
           source={require("../../assets/profile.jpg")}
-          style={{borderRadius: 40, width: 100, height: 100 }}
+          style={{ width: 100, height: 100 }}
         />
       </View>
       <Text

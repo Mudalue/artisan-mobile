@@ -92,9 +92,10 @@ const styles = StyleSheet.create({
     height: "100%",
     width: "100%",
     padding: 10,
+    justifyContent: 'center'
   },
   content: {
-    height: "50%",
+    // height: "50%",
     backgroundColor: "#232B2B",
     marginTop: 50,
     marginHorizontal: 20,
