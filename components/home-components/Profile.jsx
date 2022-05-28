@@ -14,109 +14,107 @@ const Profile = () => {
     <SafeAreaView
       style={{
         display: "flex",
-        justifyContent: "flex-start",
-        position: "relative",
-        zIndex: 0,
-        width: "100%",
+        flexDirection: "column",
         height: "100%",
-        backgroundColor: "#232B2B",
+        width: "100%",
+       
       }}
     >
-      <View
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          justifyContent: "center",
-          paddingTop: 30,
-          paddingBottom: 20,
-        }}
-      >
-        <Image
-          source={require("../../assets/profile.jpg")}
-          style={{ width: 100, height: 100 }}
-        />
-      </View>
-      <Text
-        style={{
-          color: "#fff",
-          textAlign: "center",
-          fontSize: 25,
-          fontWeight: "800",
-          fontFamily: 'Inter_900Black'
-        }}
-      >
-        Abiodun Mudalue
-      </Text>
-      <Text
-        style={{
-          color: "#fff",
-          textAlign: "center",
-          fontSize: 18,
-          fontWeight: "500",
-          marginTop: 5,
-          fontFamily: 'Inter_900Black'
-        }}
-      >
-        Lagos, Nigeria
-      </Text>
-      <View
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          justifyContent: "center",
-          marginTop: 10,
-        }}
-      >
-        <Icon
-          name="facebook"
-          color="#fff"
-          size={20}
-          style={{ marginHorizontal: 10 }}
-        />
-        <Icon
-          name="twitter"
-          color="#fff"
-          size={20}
-          style={{ marginRight: 10 }}
-        />
-        <Icon name="linkedin" color="#fff" size={20} />
-        <Icon
-          name="instagram"
-          color="#fff"
-          size={20}
-          style={{ marginHorizontal: 10 }}
-        />
-      </View>
-      <TouchableOpacity
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          marginTop: 8,
-          width: "100%",
-          alignItems: "center",
-        }}
-      >
-        <Text
+      <View style={{ backgroundColor: "#232B2B" , height: '50%',  paddingTop: 40,}}>
+        <View
           style={{
-            textAlign: "center",
-            color: "#fff",
-            backgroundColor: "#ffb07c",
-            paddingHorizontal: 20,
-            marginTop: 10,
-            paddingVertical: 10,
-            fontFamily: 'Inter_900Black'
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "center",
+            paddingTop: 30,
+            paddingBottom: 20,
           }}
         >
-          Edit Profile
+          <Image
+            source={require("../../assets/profile.jpg")}
+            style={{ width: 100, height: 100 }}
+          />
+        </View>
+        <Text
+          style={{
+            color: "#fff",
+            textAlign: "center",
+            fontSize: 25,
+            fontWeight: "800",
+            fontFamily: "Inter_900Black",
+          }}
+        >
+          Abiodun Mudalue
         </Text>
-      </TouchableOpacity>
+        <Text
+          style={{
+            color: "#fff",
+            textAlign: "center",
+            fontSize: 18,
+            fontWeight: "500",
+            marginTop: 5,
+            fontFamily: "Inter_900Black",
+          }}
+        >
+          Lagos, Nigeria
+        </Text>
+        <View
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "center",
+            marginTop: 10,
+          }}
+        >
+          <Icon
+            name="facebook"
+            color="#fff"
+            size={20}
+            style={{ marginHorizontal: 10 }}
+          />
+          <Icon
+            name="twitter"
+            color="#fff"
+            size={20}
+            style={{ marginRight: 10 }}
+          />
+          <Icon name="linkedin" color="#fff" size={20} />
+          <Icon
+            name="instagram"
+            color="#fff"
+            size={20}
+            style={{ marginHorizontal: 10 }}
+          />
+        </View>
+        <TouchableOpacity
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            marginTop: 8,
+            width: "100%",
+            alignItems: "center",
+          }}
+        >
+          <Text
+            style={{
+              textAlign: "center",
+              color: "#fff",
+              backgroundColor: "#ffb07c",
+              paddingHorizontal: 20,
+              marginTop: 10,
+              paddingVertical: 10,
+              fontFamily: "Inter_900Black",
+            }}
+          >
+            Edit Profile
+          </Text>
+        </TouchableOpacity>
+      </View>
+
       <View
         style={{
-          position: "fixed",
-          top: "10%",
           backgroundColor: "#fff",
-          height: "100%",
-          borderRadius: "25px 0",
+          height: '50%'
         }}
       >
         <View
@@ -145,7 +143,13 @@ const Profile = () => {
         </View>
         <View>
           <Text
-            style={{ fontSize: 20, paddingHorizontal: 20, fontWeight: "800",color:'#232B2B', fontFamily: 'Inter_900Black' }}
+            style={{
+              fontSize: 20,
+              paddingHorizontal: 20,
+              fontWeight: "800",
+              color: "#232B2B",
+              fontFamily: "Inter_900Black",
+            }}
           >
             Activities
           </Text>
@@ -163,15 +167,30 @@ const Profile = () => {
                 borderRightWidth: 1,
                 paddingVertical: 10,
                 paddingHorizontal: 20,
-                borderColor:'#232B2B',
-                borderLeftColor: '#ffb07c'
+                borderColor: "#232B2B",
+                borderLeftColor: "#ffb07c",
               }}
             >
               <View>
-                <Text style={{ fontWeight: "500", fontSize: 15, color:'#232B2B', fontFamily: 'Inter_900Black' }}>
+                <Text
+                  style={{
+                    fontWeight: "500",
+                    fontSize: 15,
+                    color: "#232B2B",
+                    fontFamily: "Inter_900Black",
+                  }}
+                >
                   Boladale bodulas
                 </Text>
-                <Text style={{ fontSize: 20, fontWeight: "800", marginTop: 5, color:'#232B2B', fontFamily: 'Inter_900Black' }}>
+                <Text
+                  style={{
+                    fontSize: 20,
+                    fontWeight: "800",
+                    marginTop: 5,
+                    color: "#232B2B",
+                    fontFamily: "Inter_900Black",
+                  }}
+                >
                   {"\u20A6"}400000
                 </Text>
               </View>
@@ -198,21 +217,34 @@ const Profile = () => {
                 paddingVertical: 10,
                 paddingHorizontal: 20,
                 marginVertical: 10,
-                borderColor:'#232B2B',
-                borderLeftColor: '#ffb07c'
+                borderColor: "#232B2B",
+                borderLeftColor: "#ffb07c",
               }}
             >
               <View>
-                <Text style={{ fontWeight: "500", fontSize: 15, fontFamily: 'Inter_900Black'}}>
+                <Text
+                  style={{
+                    fontWeight: "500",
+                    fontSize: 15,
+                    fontFamily: "Inter_900Black",
+                  }}
+                >
                   Boladale bodulas
                 </Text>
-                <Text style={{ fontSize: 20, fontWeight: "800", marginTop: 5, fontFamily: 'Inter_900Black' }}>
+                <Text
+                  style={{
+                    fontSize: 20,
+                    fontWeight: "800",
+                    marginTop: 5,
+                    fontFamily: "Inter_900Black",
+                  }}
+                >
                   {"\u20A6"}200000
                 </Text>
               </View>
               <View>
                 <Icon
-                  name='bitcoin'
+                  name="bitcoin"
                   color="#232B2B"
                   size={25}
                   style={{ marginHorizontal: 10 }}
@@ -232,11 +264,11 @@ const styles = StyleSheet.create({
     fontSize: 25,
     fontWeight: "800",
     textAlign: "center",
-    color:'#232B2B',
-    fontFamily: 'Inter_900Black'
+    color: "#232B2B",
+    fontFamily: "Inter_900Black",
   },
   statisticsText2: {
     textAlign: "center",
-    fontFamily: 'Inter_900Black'
+    fontFamily: "Inter_900Black",
   },
 });

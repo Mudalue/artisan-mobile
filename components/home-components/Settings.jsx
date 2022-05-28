@@ -5,7 +5,7 @@ import Icon from "react-native-vector-icons/FontAwesome";
 const Settings = ({navigation}) => {
   return (
     <View style={{ display: "flex", width: "100%", padding: 15 }}>
-      <TouchableOpacity style={{ height: 50, marginTop: 20, display: 'flex', flexDirection: 'row', justifyContent: 'space-between', borderTopWidth: 1, borderBottomWidth: 1, borderColor: '#232B2B', paddingTop: 15, borderLeftWidth: 10, borderRightWidth: 1  }}>
+      <TouchableOpacity style={{ height: 50, marginTop: 20, display: 'flex', flexDirection: 'row', justifyContent: 'space-between', borderTopWidth: 1, borderBottomWidth: 1, borderColor: '#232B2B', paddingTop: 15, borderLeftWidth: 10, borderRightWidth: 1, marginTop: 50  }}>
         <View style={{display: 'flex', flexDirection: 'row'}}>
           <Icon
             name="lock"
